@@ -1,2 +1,5 @@
 # diabetes-risk-prediction-brfss
 Binary classification of diabetes risk using BRFSS health indicator survey data, comparing Random Forest, Gradient Boosting, SVM, and Logistic Regression.
+This project predicts whether an individual has diabetes based on health indicators from the CDC's Behavioral Risk Factor Surveillance System (BRFSS) survey data. Three related BRFSS diabetes datasets are combined, cleaned, and used to train and compare four classification models. The dataset includes features like BMI, age, income, physical activity, alcohol consumption, and other health indicators.
+
+Results: Gradient Boosting performed best on accuracy and ROC AUC (83.5% accuracy, 0.797 ROC AUC), followed by Random Forest (80.8% accuracy, 0.722 ROC AUC). Both models struggled with recall on the diabetic class specifically, meaning they're much better at correctly identifying non-diabetics than diabetics. This is worth stating directly in the README as a known limitation, since accuracy alone hides that weakness on an imbalanced medical dataset.
